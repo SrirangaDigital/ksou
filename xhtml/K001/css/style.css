@@ -228,8 +228,10 @@ body {
 	text-align: center;
 }
 .maintext table{
+/*
 	display: block;
 	text-align: center;
+*/
 }
 .maintext figure img{
 	text-align: center;
