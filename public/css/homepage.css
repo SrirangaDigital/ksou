@@ -1,0 +1,290 @@
+a {
+  color: #1565C0;
+}
+.flat-page, .dynamic-page{
+    margin-top: 80px;
+}
+.dynamic-page{
+    min-height: 75vh;
+    font-family: 'Raleway', sans-serif;
+    color: #222;
+}
+.banner {
+    /*background-attachment: fixed;*/
+    display: table;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+.banner .row{
+    height: 100%;
+}
+.banner h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 36px;
+    line-height: 48px;
+}
+.banner h1 small{
+    font-weight: 100;
+    font-style: italic;
+    font-size: 24px;
+    color: #FFF;
+}
+.banner input.bigSearch {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    width: 80%;
+    padding: 8px;
+    margin: 16px 0;
+    border: none;
+    opacity: 0.95;
+    color: #333;
+    outline: none;
+}
+.banner .overlay {
+    padding: 100px 0px;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.prelims {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 80px;
+    font-weight: 300;
+    color: #333;
+}
+.prelims p, .footer p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    margin: 10px 0;
+}
+.prelims h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    border-bottom: 1px  solid #eee;
+}
+.prelims h2 {
+    margin: 25px 0px;
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+}
+.left-border{
+    border-left: 1px solid #eee;
+    height: auto;
+}
+.word-of-the-day {
+    margin-top: 120px;
+    margin-bottom: 120px;
+}
+.word-of-the-day h2{
+    text-align: center;
+}
+.word-of-the-day h2 span{
+    display: block;
+}
+.word-of-the-day h2 span:first-of-type:after{
+    display: block;
+    content: '—';
+}
+.word-of-the-day h1{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 48px;
+    font-weight: 200;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+.word-of-the-day .see-more{
+    text-align: right;
+    color: #D50000;
+    font-style: italic;
+}
+.word-of-the-day .see-more a{
+    color: inherit;
+}
+
+
+.about-tabs {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+}
+.about-tabs.nav-tabs .nav-link{
+    color: #333;
+    font-size: 20px;
+    border: none;
+    border-bottom: 1px solid transparent;
+}
+.about-tabs.nav-tabs .nav-link.active,
+.about-tabs.nav-tabs .nav-link:focus,
+.about-tabs.nav-tabs .nav-link:hover {
+    color: #D50000;
+    font-weight: 400;
+    border-radius: 0;
+}
+.about-content .tab-pane .prelims{
+    padding-top: 40px;
+    padding-left: 0;
+    padding-right: 0;
+}
+.dedication h2, .author h2{
+    text-align: center;
+}
+.dedication .verse{
+    font-size: 24px;
+    line-height: 40px;
+    color: #D50000;
+}
+.blessing p{
+    color: #D50000;
+}
+.blessing img{
+    margin-bottom: 20px;
+}
+
+@media(min-width:768px) {
+    .flat-page, .dynamic-page{
+        margin-top: 120px;
+    }
+    .banner .overlay {
+        padding: 40px;
+        border-radius: 10px;
+    }
+    .banner h1{
+        font-size: 48px;
+        line-height: 64px;
+    }
+    .banner h1 small{
+        font-size: 32px;
+    }
+    .banner input.bigSearch {
+        font-size: 24px;
+        width: 60%;
+        padding: 12px;
+        margin: 16px 0;
+    }
+    .prelims p {
+        font-size: 18px;
+        line-height: 10px;
+    }
+    .prelims p{
+        margin: 20px 0;
+    }
+    .dedication h2, .author h2{
+        text-align: left;
+    }
+    .about-tabs.nav-tabs .nav-link.active,
+    .about-tabs.nav-tabs .nav-link:focus,
+    .about-tabs.nav-tabs .nav-link:hover {
+        border-bottom: 1px solid #ddd;
+    }
+    .about-content .tab-pane .prelims{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .word-of-the-day h2 span{
+        display: inline;
+    }
+    .word-of-the-day h2 span:first-of-type:after{
+        display: inline;
+        content: ' | ';
+    }
+}
+
+/*Scroll down*/
+
+a.scrollMore {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  color: #fff;
+  font : normal 400 20px/1 'Josefin Sans', sans-serif;
+  letter-spacing: .1em;
+  text-decoration: none;
+  transition: opacity .3s;
+  cursor: pointer;
+}
+a.scrollMore:hover {
+  opacity: .5;
+}
+
+a.scrollMore {
+  padding-top: 70px;
+}
+a.scrollMore span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 24px;
+  height: 24px;
+  margin-left: -12px;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-animation: sdb05 1.5s infinite;
+  animation: sdb05 1.5s infinite;
+  box-sizing: border-box;
+}
+@-webkit-keyframes sdb05 {
+  0% {
+    -webkit-transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+@keyframes sdb05 {
+  0% {
+    transform: rotate(-45deg) translate(0, 0);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: rotate(-45deg) translate(-20px, 20px);
+    opacity: 0;
+  }
+}
+h1.level1-title {
+  font-size: 2em;
+  color: #0277BD;
+  line-height: 1.5em;
+  padding: 10px 0px;
+}
+h2.level2-title {
+  font-size: 1.25em;
+  color: #0277BD;
+  margin-bottom: 0;
+  padding: 10px 0px;
+}
+.archive img{
+  width: 300px;
+}
+.archive .title{
+  text-align: center;
+  width: 87%;
+  padding-top: 10px;
+}
+.archive a:HOVER{
+  text-decoration: none;
+}
+.toc img{
+  height: 500px;
+}
+table {
+  width: 100%;
+}

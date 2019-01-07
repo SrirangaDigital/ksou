@@ -1,0 +1,39 @@
+<!ELEMENT eoh (volume+)>
+<!ELEMENT volume (entry+)>
+<!ATTLIST volume vnum CDATA #REQUIRED>
+<!ELEMENT entry (head, description)>
+<!ELEMENT head (word|note|alias|note)*>
+<!ELEMENT word (#PCDATA)>
+<!ELEMENT note ANY>
+<!ELEMENT alias (#PCDATA)>
+<!ELEMENT description ANY>
+<!ELEMENT p ANY>
+<!ATTLIST p type CDATA #IMPLIED>
+<!ELEMENT ol (li+)>
+<!ELEMENT ul (li+)>
+<!ATTLIST ul class (lower-alpha|lower-roman|unlist) #IMPLIED>
+<!ELEMENT li ANY>
+<!ELEMENT h1 ANY>
+<!ELEMENT h2 ANY>
+<!ELEMENT h3 ANY>
+<!ELEMENT table ANY>
+<!ELEMENT thead ANY>
+<!ELEMENT tbody ANY>
+<!ATTLIST table class CDATA #IMPLIED>
+<!ELEMENT tr ANY>
+<!ELEMENT th ANY>
+<!ELEMENT td ANY>
+<!ELEMENT figure ANY>
+<!ELEMENT figcaption ANY>
+<!ELEMENT aside ANY>
+<!ELEMENT em ANY>
+<!ELEMENT strong ANY>
+<!ELEMENT sup ANY>
+<!ELEMENT ref ANY>
+<!ATTLIST ref href CDATA #REQUIRED>
+<!ELEMENT u ANY>
+<!ELEMENT br EMPTY>
+<!ELEMENT dt ANY>
+<!ELEMENT dl ANY>
+<!ELEMENT dd ANY>
+<!ELEMENT caption ANY>

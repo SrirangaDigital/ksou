@@ -1,0 +1,244 @@
+/*styles for Dictionary words*/
+
+/*Due to a ug in ios < 10.3, column-count is currently not used*/
+.multi-column .column:not(:last-of-type) {
+	border-right: 1px solid #ddd;
+	padding-right: 10px;
+}
+.multi-column .column:not(:first-of-type) {
+	padding-left: 10px;
+}
+
+/*Eventually column-count should be used*/
+/*.multi-column {
+	column-rule: 1px solid #ddd;
+	-webkit-column-count: 2;
+	-moz-column-count: 2;
+	column-count: 2;
+}
+@media (min-width: 576px) {
+	.multi-column {
+		-webkit-column-count: 3;
+		-moz-column-count: 3;
+		column-count: 3;
+	}
+}
+@media (min-width: 768px) {
+	.multi-column {
+		-webkit-column-count: 4;
+		-moz-column-count: 4;
+		column-count: 4;
+	}
+}
+@media (min-width: 992px) {
+	.multi-column {
+		-webkit-column-count: 5;
+		-moz-column-count: 5;
+		column-count: 5;
+	}
+}
+@media (min-width: 1200px) {
+	.multi-column {
+		-webkit-column-count: 6;
+		-moz-column-count: 6;
+		column-count: 6;
+	}
+}*/
+
+.alphabet{
+	margin-bottom: 30px;
+}
+.alphabet li{
+	display: inline;
+	margin: 0 7px;
+}
+.alphabet a{
+	color: inherit;
+}
+.alphabet a:hover{
+	border-top: 2px solid #D50000;
+}
+
+.word-list{
+	margin-bottom: 30px;
+}
+.word-list a{
+	display: block;
+	color: #1565C0;
+	padding-bottom: 8px;
+	line-height: 24px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+
+.word > div:empty {
+	display: none;
+}
+.word {
+    margin: 0 0 30px 0;
+    padding: 20px 20px 40px 20px;
+    box-shadow: 0 1px 2px rgba(34, 25, 25, 0.4);
+    line-height: 24px;
+	font-weight: 300;
+}
+.word h1.head-word{
+	color: #1565C0;
+	font-size: 32px;
+	font-weight: 300;
+    line-height: 32px;
+}
+.word h3.head-word-note{
+	font-size: 18px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	font-weight: 300;
+    line-height: 24px;
+}
+.word h2.alias-word{
+	margin-top: 20px;
+	margin-bottom: 0px;
+	font-size: 28px;
+	font-weight: 300;
+    line-height: 24px;
+}
+.word h3.alias-word-note{
+	font-size: 18px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	font-weight: 300;
+    line-height: 24px;
+}
+.word div.description{
+	border-top: 1px solid #ddd;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+.word div.description h1{
+	margin-top: 30px;
+	font-size: 24px;
+	font-weight: 400;
+}
+.word div.description h2{
+	margin-top: 15px;
+	font-size: 20px;
+	font-weight: 400;
+}
+.word div.description h3{
+	font-size: 18px;
+	font-weight: 400;
+}
+.word div.description h4,
+.word div.description h5,
+.word div.description h6{
+	font-weight: 400;
+}
+.word div.description table,
+.word div.description dl {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+.word div.description table{
+	border-collapse: collapse;
+}
+.word div.description table td,
+.word div.description table th{
+	padding: 8px;
+	border: 1px solid #ddd;
+}
+.word div.description .lower-alpha{
+	list-style-type: lower-alpha;
+}
+.word div.description .lower-roman{
+	list-style-type: lower-roman;
+}
+.word div.description dl dd{
+	margin-left: 30px;
+}
+.word div.description a{
+	color: #1565C0;
+}
+.word div.description figure{
+	max-width: 300px;
+	margin: 40px auto;
+	display: block;
+	cursor: pointer;
+	text-align: center;
+}
+.word div.description figure.figure figcaption.figure-caption{
+	color: #222;
+	padding-top: 10px;
+}
+.word div.description sup .footNote{
+	font-size: 16px;
+	cursor: pointer;
+	font-weight: 400;
+}
+.word div.description sup .footNote:before{
+	content: '[';
+	font-weight: 400;
+}
+.word div.description sup .footNote:after{
+	content: ']';
+	font-weight: 400;
+}
+.word a{
+	color: inherit;
+}
+.word a:hover{
+	text-decoration: none;
+}
+.word.search p.see-more{
+    text-align: right;
+    color: #D50000;
+    font-style: italic;
+}
+.word.search p.see-more a{
+    color: inherit;
+}
+.word p.verse{
+	text-align: center;
+	font-style: italic;
+}
+.word.search{
+	max-height: 300px;
+	overflow-y: hidden;
+	overflow-x: hidden;
+	padding-bottom: 0;
+}
+.word.search.in-description div.description:before,
+.word.search.in-description div.description:after{
+	content: '...';
+}
+.resultSeparator p{
+	margin-top: 40px;
+	margin-bottom: 20px;
+	padding: 20px;
+	border-left: 10px solid #D50000;
+}
+.hide{
+	display: none !important;
+}
+.highlight{
+	background-color: #FFF59D !important;
+}
+.popover-body{
+	font-family: 'Raleway', sans-serif;
+	color: #222;
+	font-size: 14px;
+	line-height: 24px;
+	padding: 15px;
+	color: #1565C0;
+}
+#prevNextWord{
+	text-align: right;
+}
+#prevNextWord a {
+	color: #1565C0;
+	padding: 0 10px;
+	text-decoration: none;
+}
+#prevNextWord span {
+	padding: 0 10px;
+}
